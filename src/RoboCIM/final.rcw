@@ -1,0 +1,2414 @@
+##############################################################################
+##                                                                          ##
+##                                 WARNING                                  ##
+##                                                                          ##
+##              This is a generated file.  Edit at your risk!               ##
+##                                                                          ##
+##############################################################################
+
+ROBOCIM_FILE
+VERSION: r401
+TYPE: Labvolt
+SKIN: LV5250
+
+
+##############################################################################
+##                                                                          ##
+##                          Units and Scale Factor                          ##
+##                                                                          ##
+##############################################################################
+
+# -------------------------------------------------------------------------- #
+#                          Default Units for Model                           #
+# -------------------------------------------------------------------------- #
+
+length
+   mm
+mass
+   kg
+inertia
+   kg_m_m
+force
+   N
+pressure
+   Pa
+
+# -------------------------------------------------------------------------- #
+#                                Scale Factor                                #
+# -------------------------------------------------------------------------- #
+
+value
+   1
+
+##############################################################################
+##                                                                          ##
+##                                  Model                                   ##
+##                                                                          ##
+##############################################################################
+
+# -------------------------------------------------------------------------- #
+#                                Ground Part                                 #
+# -------------------------------------------------------------------------- #
+
+representation_type
+   AU_LONG
+simplify_parameters
+   
+general_parameters
+   0 0.2 0 
+
+# -------------------------------------------------------------------------- #
+#                             End-Effector Part                              #
+# -------------------------------------------------------------------------- #
+
+representation_type
+   AU_LONG
+simplify_parameters
+   
+general_parameters
+   0 0 0 
+dynamics_parameters
+   
+effector_file
+   (null)
+effector_file_parametres
+   1 0 0 0 
+
+# -------------------------------------------------------------------------- #
+#                             Actuated Leg Part                              #
+# -------------------------------------------------------------------------- #
+
+representation_type
+   DIFFERENT
+parameters
+   0.003 0.3835 1.5708 0 0.361 0 0 0 0.2278 0 0 0 0 0 1.5708 0 0 0.165 0 0 
+dynamic_representation_type
+   DIFFERENT
+dynamics_parameters
+   
+hydraulic_parameters
+   
+
+# -------------------------------------------------------------------------- #
+#                              Passive Leg Part                              #
+# -------------------------------------------------------------------------- #
+
+representation_type
+   DIFFERENT
+parameters
+   
+dynamic_representation_type
+   DIFFERENT
+dynamics_parameters
+   
+
+##############################################################################
+##                                                                          ##
+##                               GUI Settings                               ##
+##                                                                          ##
+##############################################################################
+
+# -------------------------------------------------------------------------- #
+#                                Ground Panel                                #
+# -------------------------------------------------------------------------- #
+
+limits_sim
+   
+limits_gen
+   -2 2 -2 2 -2 2 
+
+# -------------------------------------------------------------------------- #
+#                             End-Effector Panel                             #
+# -------------------------------------------------------------------------- #
+
+limits_sim
+   
+limits_gen
+   -2 2 -2 2 -2 2 
+
+# -------------------------------------------------------------------------- #
+#                             Actuated Leg Panel                             #
+# -------------------------------------------------------------------------- #
+
+limits_sim
+   0 2 0 2 -180 180 -180 180 0 2 0 2 -180 180 -180 180 0 2 0 2 -180 180 -180 180 0 2 0 2 -180 180 -180 180 0 2 0 2 -180 180 -180 180 
+
+# -------------------------------------------------------------------------- #
+#                             Passive Leg Panel                              #
+# -------------------------------------------------------------------------- #
+
+limits_gen
+   
+
+# -------------------------------------------------------------------------- #
+#                              Cartesian Panel                               #
+# -------------------------------------------------------------------------- #
+
+limits
+   -1 1 -1 1 0 1 -180 180 -180 180 
+
+# -------------------------------------------------------------------------- #
+#                              Actuators Panel                               #
+# -------------------------------------------------------------------------- #
+
+limits
+   -160 160 -40 130 -130 100 -10 190 -1800 1800 
+
+# -------------------------------------------------------------------------- #
+#                              Workspace Panel                               #
+# -------------------------------------------------------------------------- #
+
+limits
+   -200 200 -200 200 -200 200 
+
+##############################################################################
+##                                                                          ##
+##                             Session Settings                             ##
+##                                                                          ##
+##############################################################################
+
+# -------------------------------------------------------------------------- #
+#                              Neutral Position                              #
+# -------------------------------------------------------------------------- #
+
+percentage
+   50
+zoffset
+   NONACTIF
+
+# -------------------------------------------------------------------------- #
+#                                Coordinates                                 #
+# -------------------------------------------------------------------------- #
+
+cartesian_values
+   0.398546 0.201676 0.531173 2.60389 -1.54346 
+branch_of_solution
+   2 1
+articular_values
+   0.00420604 1.3148 -1.58009 0.801607 1.59813 
+
+# -------------------------------------------------------------------------- #
+#                                   Grids                                    #
+# -------------------------------------------------------------------------- #
+
+number
+   3 1 2 1
+visible
+   1
+
+# -------------------------------------------------------------------------- #
+#                              Background Color                              #
+# -------------------------------------------------------------------------- #
+
+color
+   0.248 0.358 0.514
+
+# -------------------------------------------------------------------------- #
+#                               Grasp Snapping                               #
+# -------------------------------------------------------------------------- #
+
+snapping
+   0
+
+# -------------------------------------------------------------------------- #
+#                                  Objects                                   #
+# -------------------------------------------------------------------------- #
+
+number
+   2
+
+obj_type
+   Robot Labvolt
+name
+   5250
+obj_position
+   0 0.2 0
+obj_orientation
+   1 0 0 0 1 0 0 0 1
+obj_appear
+   1
+obj_parent
+   (null)
+
+obj_type
+   Gripper
+name
+   Gripper
+obj_position
+   0.612046 0.276676 0.531173
+obj_orientation
+   -0.0192876 -0.859387 0.510963 -0.999716 0.0237189 0.00215597 -0.0139723 -0.510776 -0.8596
+obj_appear
+   0
+obj_parent
+   5250
+value
+   0.000120332
+
+# -------------------------------------------------------------------------- #
+#                                  Points                                    #
+# -------------------------------------------------------------------------- #
+
+number
+   65
+
+name
+   A1
+articular_values
+   -0.208847 -0.212974 0.00224851 0.576547 1.56167 
+cartesian_values
+   0.623773 -0.132199 0.105466 2.7758 -1.57992 
+color
+   0.2 0.67 0.27
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   A2
+articular_values
+   -0.224454 -0.114357 -0.240114 0.397308 1.56389 
+cartesian_values
+   0.567738 -0.129614 0.0983904 3.09879 -1.5777 
+color
+   0.93 0.28 0.22
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   A3
+articular_values
+   -0.248791 0.103617 -0.843879 0.743369 1.56396 
+cartesian_values
+   0.514418 -0.130689 0.102193 3.13852 -1.57763 
+color
+   0.76 0.09 0.31
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   A4
+articular_values
+   -0.274318 0.213926 -1.21745 0.991869 1.56325 
+cartesian_values
+   0.458446 -0.129011 0.103031 -3.12991 -1.57835 
+color
+   0.82 0.74 0.23
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   A5
+articular_values
+   -0.311829 0.28273 -1.48336 1.17166 1.56243 
+cartesian_values
+   0.406694 -0.131094 0.10691 -3.1126 -1.57917 
+color
+   0.14 0.41 0.39
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   A6
+articular_values
+   -0.36246 0.3113 -1.6994 1.3559 1.56225 
+cartesian_values
+   0.357859 -0.135703 0.10515 -3.10938 -1.57934 
+color
+   0.5 0.19 0.46
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   A7
+articular_values
+   -0.41399 0.322145 -1.90444 1.55019 1.56225 
+cartesian_values
+   0.309003 -0.135769 0.105094 -3.10947 -1.57934 
+color
+   0.05 0.66 0.89
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   A8
+articular_values
+   -0.42936 0.320796 -2.11019 1.76473 1.56222 
+cartesian_values
+   0.2656 -0.121602 0.110002 -3.11691 -1.57937 
+color
+   0.34 0.28 0.36
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   B1
+articular_values
+   -0.127133 -0.205673 0.00280403 0.48111 1.80854 
+cartesian_values
+   0.619797 -0.0792226 0.105223 2.86341 -1.33305 
+color
+   0.88 0.68 0.91
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   B2
+articular_values
+   -0.149724 -0.0492556 -0.395897 0.475842 1.56359 
+cartesian_values
+   0.567801 -0.085653 0.102714 3.11095 -1.57801 
+color
+   0.04 0.82 0.61
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   B3
+articular_values
+   -0.156576 0.142503 -0.972177 0.8373 1.56482 
+cartesian_values
+   0.509086 -0.0803667 0.101724 3.13401 -1.57678 
+color
+   0.34 0.29 0.62
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   B4
+articular_values
+   -0.168665 0.236702 -1.31567 1.06605 1.56273 
+cartesian_values
+   0.452861 -0.0771126 0.102368 -3.12863 -1.57886 
+color
+   0.81 0.79 0.38
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   B5
+articular_values
+   -0.188505 0.289264 -1.55613 1.2521 1.56184 
+cartesian_values
+   0.407395 -0.0777168 0.104133 -3.12679 -1.57975 
+color
+   0.03 0.91 0.18
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   B6
+articular_values
+   -0.238818 0.324579 -1.80831 1.48339 1.5613 
+cartesian_values
+   0.354548 -0.0863182 0.106689 -3.14122 -1.5803 
+color
+   0.79 0.29 0.89
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   B7
+articular_values
+   -0.257177 0.317569 -2.00266 1.65301 1.56229 
+cartesian_values
+   0.30433 -0.0800374 0.104996 -3.10949 -1.5793 
+color
+   0.51 0.76 0.44
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   B8
+articular_values
+   -0.301512 0.285534 -2.19053 1.87292 1.56229 
+cartesian_values
+   0.257221 -0.0799923 0.105071 -3.10949 -1.5793 
+color
+   0.96 0.52 0.51
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   C1
+articular_values
+   -0.0511338 -0.195753 0.00362407 0.389616 1.80888 
+cartesian_values
+   0.612287 -0.0313342 0.107993 2.94424 -1.33271 
+color
+   0.31 0.38 0.49
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   C2
+articular_values
+   -0.0618473 0.0119568 -0.566651 0.592949 1.5626 
+cartesian_values
+   0.562851 -0.0348536 0.102959 3.10346 -1.579 
+color
+   0.12 0.98 0.32
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   C3
+articular_values
+   -0.0530119 0.168268 -1.05349 0.928309 1.56482 
+cartesian_values
+   0.509515 -0.0270341 0.102781 3.09865 -1.57678 
+color
+   0.1 0.95 0.41
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   C4
+articular_values
+   -0.0609479 0.259848 -1.40577 1.16419 1.56215 
+cartesian_values
+   0.447962 -0.0273346 0.103734 3.12345 -1.57944 
+color
+   0.8 0.48 0.7
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   C5
+articular_values
+   -0.0728517 0.299264 -1.59054 1.27609 1.56133 
+cartesian_values
+   0.407214 -0.0297172 0.105989 -3.1263 -1.58026 
+color
+   0.54 0.69 0.17
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   C6
+articular_values
+   -0.10613 0.325717 -1.8478 1.53863 1.56068 
+cartesian_values
+   0.356823 -0.0380107 0.106508 3.12512 -1.58091 
+color
+   0.67 0.22 0.16
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   C7
+articular_values
+   -0.0825071 0.313628 -2.04199 1.69629 1.56229 
+cartesian_values
+   0.304315 -0.0251637 0.104979 -3.10943 -1.5793 
+color
+   0.54 0.69 0.93
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   C8
+articular_values
+   -0.1197 0.298523 -2.26438 1.94716 1.56198 
+cartesian_values
+   0.255435 -0.0307209 0.114449 -3.12283 -1.57961 
+color
+   0.81 0.71 0.15
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   D1
+articular_values
+   0.040579 -0.195753 0.00362407 0.425534 1.80827 
+cartesian_values
+   0.618368 0.0251081 0.10926 2.90801 -1.33332 
+color
+   0.94 0.74 0.44
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   D2
+articular_values
+   0.0314527 0.0119568 -0.566651 0.592949 1.5626 
+cartesian_values
+   0.56365 0.0177358 0.102959 3.1031 -1.579 
+color
+   0.33 0.41 0.12
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   D3
+articular_values
+   0.0369814 0.168268 -1.05344 0.928225 1.56485 
+cartesian_values
+   0.509887 0.0188666 0.102789 3.09834 -1.57674 
+color
+   0.01 0.5 0.55
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   D4
+articular_values
+   0.0372459 0.257362 -1.40275 1.1663 1.5627 
+cartesian_values
+   0.449259 0.0167425 0.102925 3.12048 -1.57889 
+color
+   0.02 0.12 0.41
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   D5
+articular_values
+   0.0401293 0.30429 -1.62091 1.30629 1.56099 
+cartesian_values
+   0.402666 0.016169 0.106189 -3.13144 -1.5806 
+color
+   0.33 0.3 0.08
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   D6
+articular_values
+   0.0376692 0.328917 -1.88259 1.56545 1.56068 
+cartesian_values
+   0.350244 0.0132013 0.107355 3.12962 -1.58091 
+color
+   0.84 0.31 0.4
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   D7
+articular_values
+   0.0471658 0.31704 -2.11662 1.80228 1.56215 
+cartesian_values
+   0.294465 0.0139006 0.10918 3.13873 -1.57944 
+color
+   0.3 0.9 0.37
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   D8
+articular_values
+   0.0702329 0.280297 -2.2615 1.94571 1.56184 
+cartesian_values
+   0.252545 0.0177678 0.109588 -3.10621 -1.57975 
+color
+   0.87 0.15 0.09
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   E1
+articular_values
+   0.127848 -0.188875 0.00275112 0.368297 1.80875 
+cartesian_values
+   0.606349 0.077947 0.111297 2.95936 -1.33285 
+color
+   0.19 0.12 0.34
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   E2
+articular_values
+   0.121605 0.0119568 -0.566651 0.592949 1.5626 
+cartesian_values
+   0.559764 0.0684091 0.102959 3.10328 -1.579 
+color
+   0.58 0.58 0.05
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   E3
+articular_values
+   0.136075 0.16512 -1.0327 0.880066 1.56526 
+cartesian_values
+   0.503762 0.0689771 0.104092 3.12905 -1.57633 
+color
+   0.72 0.89 0.83
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   E4
+articular_values
+   0.141841 0.254108 -1.39577 1.17447 1.56338 
+cartesian_values
+   0.448059 0.0639846 0.102193 3.10873 -1.57821 
+color
+   0.01 0.97 0.51
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   E5
+articular_values
+   0.167236 0.291566 -1.60668 1.33157 1.56068 
+cartesian_values
+   0.403383 0.0680979 0.101898 3.1251 -1.58091 
+color
+   0.08 0.81 0
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   E6
+articular_values
+   0.178823 0.325161 -1.88864 1.58836 1.56041 
+cartesian_values
+   0.345259 0.0624084 0.106083 3.11667 -1.58118 
+color
+   0.78 0.33 0.07
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   E7
+articular_values
+   0.209773 0.321272 -2.09048 1.77173 1.56219 
+cartesian_values
+   0.294443 0.0626901 0.109164 3.13904 -1.57941 
+color
+   0.4 0.01 0.43
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   E8
+articular_values
+   0.232919 0.295163 -2.21092 1.81689 1.56294 
+cartesian_values
+   0.248181 0.0588763 0.109939 -3.04276 -1.57866 
+color
+   0.24 0.79 0.57
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   F1
+articular_values
+   0.197128 -0.191282 -0.0404203 0.505915 1.80864 
+cartesian_values
+   0.611727 0.122177 0.103721 2.86735 -1.33295 
+color
+   0.4 0.3 0.12
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   F2
+articular_values
+   0.215672 0.0119568 -0.566651 0.592949 1.5626 
+cartesian_values
+   0.550864 0.120684 0.102959 3.1033 -1.579 
+color
+   0.27 0.11 0.52
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   F3
+articular_values
+   0.238686 0.153639 -0.978446 0.846148 1.56567 
+cartesian_values
+   0.503194 0.122441 0.106483 3.12022 -1.57592 
+color
+   0.07 0.03 0.86
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   F4
+articular_values
+   0.266171 0.250167 -1.3691 1.21098 1.56352 
+cartesian_values
+   0.450934 0.122944 0.103632 3.04953 -1.57807 
+color
+   0.57 0.49 0.41
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   F5
+articular_values
+   0.286222 0.300084 -1.5998 1.32158 1.75476 
+cartesian_values
+   0.395692 0.116455 0.10577 3.1197 -1.38683 
+color
+   0.53 0.18 0.46
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   F6
+articular_values
+   0.317357 0.320823 -1.82418 1.5016 1.56065 
+cartesian_values
+   0.342633 0.112543 0.105059 -3.13986 -1.58094 
+color
+   0.39 0.81 0.08
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   F7
+articular_values
+   0.355661 0.327727 -2.02488 1.71332 1.56225 
+cartesian_values
+   0.298799 0.110993 0.108741 3.1254 -1.57934 
+color
+   0.69 0.68 0.94
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   F8
+articular_values
+   0.405764 0.310453 -2.14905 1.73991 1.56297 
+cartesian_values
+   0.248267 0.106658 0.109904 -3.04293 -1.57862 
+color
+   0.21 0.02 0.19
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   G1
+articular_values
+   0.275535 -0.191838 -0.0376427 0.532046 1.8084 
+cartesian_values
+   0.604668 0.170957 0.105348 2.839 -1.33319 
+color
+   0.07 0.17 0.86
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   G2
+articular_values
+   0.301433 -0.193927 -0.0162422 0.262509 1.56461 
+cartesian_values
+   0.562111 0.174766 0.101631 3.08923 -1.57698 
+color
+   0.24 0.31 0.21
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   G3
+articular_values
+   0.340451 0.12462 -0.915911 0.863311 1.56564 
+cartesian_values
+   0.502596 0.178044 0.101774 3.06955 -1.57596 
+color
+   0.28 0.88 0.92
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   G4
+articular_values
+   0.357434 0.222417 -1.26171 1.04987 1.56475 
+cartesian_values
+   0.442458 0.165249 0.101768 3.13099 -1.57684 
+color
+   0 0.74 0.95
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   G5
+articular_values
+   0.403303 0.27281 -1.49079 1.21457 1.75548 
+cartesian_values
+   0.394397 0.168288 0.102 -3.1382 -1.38612 
+color
+   0.41 0.7 0.03
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   G6
+articular_values
+   0.445443 0.314368 -1.73765 1.40465 1.56051 
+cartesian_values
+   0.339955 0.162312 0.10483 -3.12297 -1.58108 
+color
+   0.26 0.78 0.07
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   G7
+articular_values
+   0.496498 0.332674 -1.93449 1.61799 1.56225 
+cartesian_values
+   0.298781 0.16187 0.108723 3.1254 -1.57934 
+color
+   0.49 0.64 0.53
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   G8
+articular_values
+   0.557842 0.304766 -2.14246 1.85387 1.56225 
+cartesian_values
+   0.245995 0.15349 0.107112 3.12541 -1.57934 
+color
+   0.84 0.83 0.18
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   H1
+articular_values
+   0.355847 -0.186759 -0.0805496 0.667142 1.57514 
+cartesian_values
+   0.601462 0.223546 0.104315 2.74174 -1.56646 
+color
+   0.14 0.91 0.12
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   H2
+articular_values
+   0.380871 -0.137239 -0.153322 0.415843 1.56389 
+cartesian_values
+   0.556516 0.222844 0.105143 3.01629 -1.5777 
+color
+   0.45 0.26 0.06
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   H3
+articular_values
+   0.408541 0.037193 -0.643153 0.622966 1.56608 
+cartesian_values
+   0.50822 0.220009 0.102204 3.12457 -1.57551 
+color
+   0.37 0.81 0.84
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   H4
+articular_values
+   0.451845 0.190303 -1.15029 1.00774 1.56451 
+cartesian_values
+   0.446232 0.216573 0.100364 3.09382 -1.57708 
+color
+   0.16 0.4 0.59
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   H5
+articular_values
+   0.497926 0.265642 -1.44958 1.24101 1.56232 
+cartesian_values
+   0.392455 0.213345 0.102577 3.0845 -1.57927 
+color
+   0.05 0.56 0.1
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   H6
+articular_values
+   0.563054 0.294211 -1.6152 1.30232 1.56051 
+cartesian_values
+   0.33971 0.214431 0.102484 -3.12294 -1.58108 
+color
+   0.78 0.4 0.31
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   H7
+articular_values
+   0.616356 0.330663 -1.81748 1.503 1.56225 
+cartesian_values
+   0.298831 0.2117 0.10873 3.12541 -1.57934 
+color
+   0.78 0.42 0.36
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   H8
+articular_values
+   0.689922 0.322939 -2.02173 1.71496 1.56225 
+cartesian_values
+   0.245988 0.202993 0.10715 3.12541 -1.57934 
+color
+   0.3 0.89 0.81
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+name
+   neutral
+articular_values
+   0.00420604 1.3148 -1.58009 0.801669 1.59813 
+cartesian_values
+   0.398555 0.00167641 0.531178 2.60383 -1.54346 
+color
+   0.52 0.58 0.4
+visible
+   1
+channel1
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+channel2
+   0
+value
+   0
+name
+   (null)
+obj_type
+   (null)
+
+# -------------------------------------------------------------------------- #
+#                                  Programs                                  #
+# -------------------------------------------------------------------------- #
+
+number
+   3
+
+<program type="text">
+SPEED 99
+OUTPUT(1) HIGH
+moveto neutral
+OUTPUT(1) LOW
+	IF INPUT(1) = LOW
+		IF INPUT(2) = LOW
+			IF INPUT(3) = LOW
+				IF INPUT(4) = LOW
+					IF INPUT(5) = LOW
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								GRIPOPEN  
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO A1 
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO A2 
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO A3 
+							ENDIF
+							
+						ENDIF
+					ELSE
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO A4 
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO A5 
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO A6 
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO A7
+							ENDIF
+							
+						ENDIF
+					ENDIF
+				
+				ELSE
+					IF INPUT(5) = LOW
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO A8 
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO B1 
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO B2
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO B3
+							ENDIF
+							
+						ENDIF
+					ELSE
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO B4
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO B5
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO B6
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO B7
+							ENDIF
+							
+						ENDIF
+					ENDIF
+				ENDIF
+			ELSE
+				IF INPUT(4) = LOW
+					IF INPUT(5) = LOW
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO B8
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO C1
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO C2
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO C3
+							ENDIF
+							
+						ENDIF
+					ELSE
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO C4
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO C5
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO C6
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO C7
+							ENDIF
+							
+						ENDIF
+					ENDIF
+				
+				ELSE
+					IF INPUT(5) = LOW
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO C8
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO D1
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO D2
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO D3
+							ENDIF
+							
+						ENDIF
+					ELSE
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO D4
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO D5
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO D6
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO D7
+							ENDIF
+							
+						ENDIF
+					ENDIF
+				ENDIF
+			ENDIF
+		ELSE
+			IF INPUT(3) = LOW
+				IF INPUT(4) = LOW
+					IF INPUT(5) = LOW
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO D8
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO E1
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO E2
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO E3
+							ENDIF
+							
+						ENDIF
+					ELSE
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO E4
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO E5
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO E6
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO E7
+							ENDIF
+							
+						ENDIF
+					ENDIF
+				
+				ELSE
+					IF INPUT(5) = LOW
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO E8
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO F1
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO F2
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO F3
+							ENDIF
+							
+						ENDIF
+					ELSE
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO F4
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO F5
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO F6
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO F7
+							ENDIF
+							
+						ENDIF
+					ENDIF
+				ENDIF
+			ELSE
+				IF INPUT(4) = LOW
+					IF INPUT(5) = LOW
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO F8
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO G1
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO G2
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO G3
+							ENDIF
+							
+						ENDIF
+					ELSE
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO G4
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO G5
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO G6
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO G7
+							ENDIF
+							
+						ENDIF
+					ENDIF
+				
+				ELSE
+					IF INPUT(5) = LOW
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO G8
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO H1
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO H2
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO H3
+							ENDIF
+							
+						ENDIF
+					ELSE
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO H4
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO H5
+							ENDIF
+						ELSE
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO H6
+							ELSE
+								OUTPUT(1) HIGH
+								MOVETO H7
+							ENDIF
+							
+						ENDIF
+					ENDIF
+				ENDIF
+			ENDIF
+		ENDIF
+	ELSE
+		IF INPUT(2) = LOW
+			IF INPUT(3) = LOW
+				IF INPUT(4) = LOW
+					IF INPUT(5) = LOW
+						IF INPUT(6) = LOW
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								MOVETO H8 
+							ENDIF
+						ENDIF
+					ENDIF
+				ENDIF
+			ENDIF
+		ELSE
+			IF INPUT(3) = HIGH
+				IF INPUT(4) = HIGH
+					IF INPUT(5) = HIGH
+						IF INPUT(6) = HIGH
+							IF INPUT(7) = LOW
+								OUTPUT(1) HIGH
+								GRIPCLOSE 
+							ELSE
+							
+							ENDIF
+						ENDIF
+					ENDIF
+				ENDIF
+			ENDIF
+		ENDIF
+	ENDIF
+OUTPUT(1) LOW
+END
+</program>
+
+<program type="text">
+
+</program>
+
+<program type="text">
+speed 99
+moveto neutral
+moveto A1
+moveto neutral
+moveto F1
+moveto neutral
+moveto C1
+moveto neutral
+moveto G1
+moveto neutral
+end
+</program>
+
+
+__end_of_robocim_file__

@@ -1,0 +1,9 @@
+In order for the system to work you need the following:
+- LabVolt software
+- LabVolt 5150 robotic arm
+- python2
+- pygame
+- pyserial
+- Arduino
+- Καλώδια σύνδεσεων
+- Breadboard
