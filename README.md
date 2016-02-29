@@ -4,7 +4,7 @@ Authors
 | Ioannis Petrousov |  | Efstathios Lymperidis |
 |:-:|:-:|:-:|
 || Department of Informatics <br /> and Telecommunications Engineering <br /> University of Western Macedonia <br /> Kozani, 50100, Greece  |   |
-|  petrousov@gmail.com   |   | talsiber@gmail.com  |
+|  petrousov@gmail.com   |   | e.l.d@live.com  |
 
 
 About
