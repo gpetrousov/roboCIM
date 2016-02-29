@@ -1,7 +1,7 @@
 # roboCIM chessplayer #
 
 ## Description ##
-<p>The roboCIM chessplayer is a project that allows you to play chess or solve chess puzzles using the robotic arm Lab-Volt Servo Robot System, Model 5250 using our custom made platform. Our platform uses an arduino to send binary signals that correspond to certain commands-action that the arm will execute. Each binary signal comming from the arduino corresponds to the action listed on the right. A1, A2,...,H7 and H8 are the squeares on the chessboard. The signals from the arduino are TTL inputs to the arm.
+<p>The roboCIM chess player is a project that allows you to play chess or solve chess puzzles using the robotic arm Lab-Volt Servo Robot System, Model 5250 using our custom made platform. Our platform uses an arduino to send binary signals that correspond to certain commands-action that the arm will execute. Each binary signal coming from the arduino corresponds to the action listed on the right. A1, A2,...,H7 and H8 are the squares on the chessboard. The signals from the arduino are TTL inputs to the arm.
 <p/>
 
 | Signal  | Action  |
