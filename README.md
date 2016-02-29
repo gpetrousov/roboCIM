@@ -1,7 +1,29 @@
+Authors
+--------------
+
+| Ioannis Petrousov |  | Efstathios Lymperidis |
+|:-:|:-:|:-:|
+|| Department of Informatics <br /> and Telecommunications Engineering <br /> University of Western Macedonia <br /> Kozani, 50100, Greece  |   |
+|  petrousov@gmail.com   |   | talsiber@gmail.com  |
+
+
+About
+=====
+This project was developed as a semester assignment for the robotics class and received the highest grade among others.
+
 # roboCIM chessplayer #
 
 ## Description ##
-<p>The roboCIM chess player is a project that allows you to play chess or solve chess puzzles using the robotic arm Lab-Volt Servo Robot System, Model 5250 using our custom made platform. Our platform uses an arduino to send binary signals that correspond to certain commands-action that the arm will execute. Each binary signal coming from the arduino corresponds to the action listed on the right. A1, A2,...,H7 and H8 are the squares on the chessboard. The signals from the arduino are TTL inputs to the arm.
+<p>
+
+The roboCIM chess player is a system that allows you to play chess or solve chess puzzles, such as the 8 queen puzzle, with the robotic arm Lab-Volt Servo Robot System Model 5250,
+using our custom made platform.
+The system consists of 3 parts: the user interface (PC), the arduino and the arm.
+The platform connects the user interface (chessboard) with an arduino via a serial bus and the arduino with the arm via digital pins and TTL I/Os.
+The UI communicates with the arm by sending binary signals, which correspond to actions listed bellow.
+In turn, the arduino receives the signals and activates digital pins which corresponding to them and are connected with the arm's TTL I/Os.
+A1, A2,...,H7 and H8 correspond to squares on the chessboard.
+
 <p/>
 
 | Signal  | Action  |
@@ -75,9 +97,4 @@
 | 1000011 | H8|
 <br />
 
-About
-=====
 
-Author
---------------
-- Original authors: Giannis Petrousov, Stathis Lymperidis
